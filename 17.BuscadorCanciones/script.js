@@ -49,7 +49,7 @@ $form.addEventListener("submit", async (e) => {
       $songTemplate = `<h2>No existe la canción <mark>${song}</mark></h2>`;
     } else {
       $songTemplate = `
-        <h2>${song}</h2>
+        <h2>${song.toUpperCase()}</h2>
         <blockquote>${songData.lyrics}</blockquote>
       `;
     }
