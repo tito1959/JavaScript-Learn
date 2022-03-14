@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  z-index: 997;
+  top: 0%;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+}
+
+header h2 {
+  margin: 0;
+  text-align: center;
+}
+
+main h2 {
+  margin: 0;
+  text-align: center;
+  padding-top: 4rem;
+}

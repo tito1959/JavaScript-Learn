@@ -1,0 +1,61 @@
+{
+  "mobs": [
+    {
+      "nombre": "Jalató",
+      "color": "Blanco",
+      "drop": "Lanas",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Tofu",
+      "color": "Amarillo",
+      "drop": "Pluma"
+    },
+    {
+      "id": 3,
+      "nombre": "Goota",
+      "color": "Azul",
+      "drop": "Agua"
+    },
+    {
+      "id": 4,
+      "nombre": "Chafer",
+      "color": "Gris",
+      "drop": "Huesos"
+    },
+    {
+      "id": 5,
+      "nombre": "Larva",
+      "color": "Naranja",
+      "drop": "Baba"
+    }
+  ],
+  "Clases": [
+    {
+      "id": 1,
+      "nombre": "Ocra",
+      "especialidad": "Arco"
+    },
+    {
+      "id": 2,
+      "nombre": "Yopuka",
+      "especialidad": "Espadas"
+    },
+    {
+      "id": 3,
+      "nombre": "Sacrogitó",
+      "especialidad": "Sangre"
+    },
+    {
+      "id": 4,
+      "nombre": "Xelor",
+      "especialidad": "Reloj"
+    },
+    {
+      "id": 5,
+      "nombre": "Tymador",
+      "especialidad": "Bombas"
+    }
+  ]
+}

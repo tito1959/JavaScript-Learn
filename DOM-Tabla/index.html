@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Tabla</title>
+</head>
+
+<body>
+    <h1>Tablas DOM</h1>
+
+    <table border="1" width="50%" id="tablaProducto">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>123456789</td>
+                <td>Refresco</td>
+                <td>15.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="agregar" type="button" onclick="agregarFila()">Agregar</button>
+    <button id="eliminar" type="button" onclick="eliminarFila()">Eliminar</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

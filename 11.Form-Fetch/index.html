@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>FORM CORS</title>
+</head>
+
+<body>
+  <main>
+    <!-- Form Validation -->
+    <section id="seccion13" class="section" data-scroll-spy>
+      <h2>Validación de Formularios</h2>
+
+      <form class="contact-form" action="https://formsubmit.co/sebasti1959@hotmail.com" method="post" target="_blank">
+        <legend>Envíanos tus comentarios</legend>
+
+        <input type="text" name="name" placeholder="Escribe tu nombre"
+          title="El nombre sólo acepta letras y espacios en blanco." required pattern="^[A-Za-zÑñ\s]+$">
+
+        <input type="email" name="email" id="" placeholder="Ingresar Email." required title="Email incorrecto."
+          pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+
+        <input type="text" name="subject" placeholder="Asunto a tratar" id="" required title="El asunto es requerido.">
+
+        <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios." data-pattern="^.{1,255}$"
+          required title="El comentario no debe exceder los 255 caracteres"></textarea>
+
+        <input type="submit" value="Enviar">
+
+        <div class="contact-form-loader none">
+          <img src="resources/Spin-1s-200px.svg" alt="cargando">
+        </div>
+
+        <div class="contact-form-response none">
+          <p>Los datos han sido enviados.</p>
+        </div>
+
+      </form>
+    </section>
+    <!-- </Form Validation -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
