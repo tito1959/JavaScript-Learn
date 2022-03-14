@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selects Anidados</title>
+
+    <style>
+
+      *{
+        margin:0;
+      }
+
+      html{
+        font: 15px "sans serif", sans-serif;
+      }
+
+      h1,h2{
+        padding:1.5rem;
+        background-color:rgb(102, 82, 214);
+        text-align: center;
+        color: white;
+        margin: 2px;
+      }
+      .form-row {
+        display: grid;
+        padding: 1rem;
+        background-color:rgb(207, 184, 230);
+        margin: 10px;
+        border-radius: 10px;
+        color: black;
+      }
+
+      #select-primary,
+      #select-secondary{
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      footer{
+         position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/ 
+            height: 40px;
+            background: rgb(112, 110, 110);
+            text-align: center;
+      }
+      label{
+          margin: 10px;
+          padding: 10px;
+          background-color:rgb(169, 120, 224);
+          border-radius: 10px;
+        }
+
+      @media screen and (min-width: 840px){
+        .form-row{
+          display: flex;
+          background-color:rgb(146, 101, 180);
+          width: 70vh;
+          margin: 10px auto;          
+        }
+        label{
+          margin: 0.2vh 10px;
+          padding: 10px;
+          background-color:rgb(169, 120, 224);
+          border-radius: 10px;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>Selects Anidados</h1>
+
+    <h2>Colombia</h2>
+
+    <div class="form-row">
+    <label for="select-primary">Departamento.</label>
+    <select name="primary" id="select-primary">
+      <option value="">Elige un departamento.</option>
+    </select>
+
+    <p></p>
+    </div>
+
+    <div class="form-row">
+    <label for="select-secondary">Ciudad.</label>
+    <select name="primary" id="select-secondary">
+      <option value="">Elige una ciudad.</option>
+    </select>
+
+    <p></p>
+    </div>
+
+    <a>
+      <footer>
+      <mark>Los datos han sido recuperados de: </mark>
+      <a href="https://www.datos.gov.co/resource/xdk5-pm3f.json " target="_blank" /> -  datos.gov.co </a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
