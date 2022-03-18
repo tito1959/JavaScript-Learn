@@ -1,27 +1,15 @@
-import api from "./helpers/wp_api.js";
-import { ajax } from "./helpers/ajax.js";
-import { Title } from "./components/Title.js";
 import { Loader } from "./components/Loader.js";
+import { Header } from "./components/Header.js";
+import { Main } from "./components/Main.js";
+import { Router } from "./components/Router.js";
 
 export function App() {
   const $root = document.getElementById("root");
+  $root.innerHTML = null;
 
-  $root.appendChild(Title());
+  $root.appendChild(Header());
+  $root.appendChild(Main());
   $root.appendChild(Loader());
 
-  //document.getElementById("root").innerHTML = `<h1>Bienvenidos a mi primer SPA con VanillaJS</h1>`;
-
-  ajax({
-    url: api.POSTS,
-    callBackSuccess: (posts) => {
-      console.log(posts);
-    },
-  });
-
-  ajax({
-    url: api.CATEGORIES,
-    callBackSuccess: (categories) => {
-      console.log(categories);
-    },
-  });
+  Router();
 }
