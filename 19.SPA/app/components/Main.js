@@ -1,7 +1,9 @@
 export function Main() {
-  const $posts = document.createElement("main");
+  const $main = document.createElement("main");
 
-  $posts.id = "main";
-  $posts.classList.add("grid-fluid");
-  return $posts;
+  $main.id = "main";
+  if (!location.hash.includes("#/search")) {
+    $main.classList.add("grid-fluid");
+  }
+  return $main;
 }
