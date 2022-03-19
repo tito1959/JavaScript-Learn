@@ -33,7 +33,7 @@ export async function infiniteScroll() {
           let html = "";
           posts.forEach((post) => {
             html += Component(post);
-            document.getElementById("main").insertAdjacentHTML("beforeend", html);
+            document.getElementById("main").insertAdjacentHTML("beforeend", Component(post));
 
             document.querySelector(".loader").style.display = "none";
           });
