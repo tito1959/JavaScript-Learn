@@ -3,8 +3,8 @@ import { App } from "./App.js";
 import { infiniteScroll } from "./helpers/infinteScroll.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  App();
   infiniteScroll();
+  App();
 });
 window.addEventListener("hashchange", () => {
   api.page = 1;
